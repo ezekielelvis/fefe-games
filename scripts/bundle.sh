@@ -11,7 +11,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/dist"
-API="${FEFE_API_URL:-http://localhost/fefe/api}"
+API="${FEFE_API_URL:-https://dev.fefe.letiarts.com/fefe/api}"
 rm -rf "$OUT" && mkdir -p "$OUT"
 
 config() { # <dir> <gameId> <slug>

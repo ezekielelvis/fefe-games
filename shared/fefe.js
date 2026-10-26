@@ -14,7 +14,7 @@ var Fefe = (function () {
   // copies use the configured public URL.
   var href = location.href;
   var cut = href.indexOf("/html5/");
-  var API = cut >= 0 ? href.slice(0, cut) : CONFIG.apiUrl || "http://localhost/fefe/api";
+  var API = cut >= 0 ? href.slice(0, cut) : CONFIG.apiUrl || "https://dev.fefe.letiarts.com/fefe/api";
 
   function gameId() { return window.FEFE_GAME_ID || window.GAME_ID || MY_GAME_ID; }
   function token() { return window.FEFE_AUTH_TOKEN || null; }

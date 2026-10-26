@@ -23,7 +23,7 @@ Both load `shared/fefe.js`, the docs' helper extended with a `finishRun()` end-o
 ## Build & bundle
 
 ```bash
-FEFE_API_URL=http://localhost/fefe/api ADINKRA_GAME_ID=47 ANANSE_GAME_ID=48 scripts/bundle.sh
+FEFE_API_URL=https://dev.fefe.letiarts.com/fefe/api ADINKRA_GAME_ID=47 ANANSE_GAME_ID=48 scripts/bundle.sh
 ```
 
 Outputs `dist/adinkra-match.zip` and `dist/ananse-hop.zip` with `index.html` at the root, relative
