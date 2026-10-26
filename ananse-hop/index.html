@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#1b0f2e" />
+  <title>Ananse Hop</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game" aria-label="Ananse Hop game"></canvas>
+
+  <div id="hud">
+    <div class="pill"><span class="lbl">Score</span><span id="score">0</span></div>
+    <div class="pill"><span class="lbl">Best</span><span id="best">0</span></div>
+  </div>
+
+  <section id="start" class="panel">
+    <h1>Ananse Hop</h1>
+    <p class="tag">Help Kweku Ananse race home with the pot of wisdom.</p>
+    <p class="hint">Tap, click or press <kbd>Space</kbd> to jump. Tap again in the air for a double jump.</p>
+    <button id="play" class="btn">Play</button>
+    <p id="who" class="who"></p>
+  </section>
+
+  <section id="over" class="panel hidden">
+    <h2>Run over</h2>
+    <p class="final"><span id="final">0</span><small>points</small></p>
+    <p id="status" class="status"></p>
+    <div class="board">
+      <h3>Leaderboard</h3>
+      <ol id="entries"><li class="muted">Loading…</li></ol>
+      <p id="mine" class="mine"></p>
+    </div>
+    <button id="again" class="btn">Play again</button>
+  </section>
+
+  <script src="fefe-config.js"></script>
+  <script src="fefe.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
